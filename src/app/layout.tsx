@@ -21,10 +21,16 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
         />
       </head>
-      <body className="h-full w-full columns-3 gap-0">
-        <Sidebar />
-        {children}
-        <Profile />
+      <body className="h-full w-full">
+        <div className="flex h-full">
+          <section className="container">
+            <Sidebar />
+          </section>
+          <section className="container">{children}</section>
+          <section className="container">
+            <Profile />
+          </section>
+        </div>
       </body>
     </html>
   );

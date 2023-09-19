@@ -13,13 +13,13 @@ export const Sidebar = () => {
   const [menuList, setMenuList] = useState<Menu[]>([
     { name: "Home", link: "/", icon: "home" },
     { name: "Search", link: "/search", icon: "search" },
-    { name: "Notification", link: "/notification", icon: "notification" },
+    { name: "Notification", link: "/notification", icon: "notifications" },
     { name: "Account", link: "/account", icon: "person" },
   ]);
 
   return (
     <nav className="h-full w-full bg-slate-400 ">
-      <ul className="text-3xl pl-6 pt-4">
+      <ul className="text-3xl p-4">
         {menuList.map((menu, index) => (
           <li key={index}>
             <Navlink

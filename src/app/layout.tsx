@@ -22,12 +22,12 @@ export default function RootLayout({
         />
       </head>
       <body className="h-full w-full">
-        <div className="flex h-full">
-          <section className="container">
+        <div className="flex h-full justify-center">
+          <section className="container max-w-xs">
             <Sidebar />
           </section>
-          <section className="container">{children}</section>
-          <section className="container">
+          <section className="container max-w-2xl">{children}</section>
+          <section className="container hidden xl:inline-block xl:max-w-xl ">
             <Profile />
           </section>
         </div>

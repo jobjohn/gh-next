@@ -1,7 +1,11 @@
+import { Writearea } from "./components/Writearea";
+
 export default function Home() {
   return (
     <main className="h-full bg-slate-100">
-      <span>hello</span>
+      <div className="flex w-full">
+        <Writearea></Writearea>
+      </div>
     </main>
   );
 }

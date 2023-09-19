@@ -13,7 +13,7 @@ export const Sidebar = () => {
   const [menuList, setMenuList] = useState<Menu[]>([
     { name: "Home", link: "/", icon: "home" },
     { name: "Search", link: "/search", icon: "search" },
-    { name: "Notification", link: "/home", icon: "home" },
+    { name: "Notification", link: "/notification", icon: "notification" },
     { name: "Account", link: "/account", icon: "person" },
   ]);
 

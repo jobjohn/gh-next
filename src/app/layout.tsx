@@ -1,5 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Sidebar } from "./components/Sidebar";
+import { Profile } from "./components/Profile";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,8 +14,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja">
-      <body>{children}</body>
+    <html lang="ja" className="w-full h-full">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+      </head>
+      <body className="h-full w-full columns-3 gap-0">
+        <Sidebar />
+        {children}
+        <Profile />
+      </body>
     </html>
   );
 }

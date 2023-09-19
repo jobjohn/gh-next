@@ -23,11 +23,11 @@ export default function RootLayout({
       </head>
       <body className="h-full w-full">
         <div className="flex h-full justify-center">
-          <section className="container max-w-xs">
+          <section className="container max-w-fit">
             <Sidebar />
           </section>
           <section className="container max-w-2xl">{children}</section>
-          <section className="container hidden xl:inline-block xl:max-w-xl ">
+          <section className="container hidden xl:inline-block xl:max-w-md ">
             <Profile />
           </section>
         </div>

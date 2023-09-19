@@ -18,7 +18,7 @@ export const Sidebar = () => {
   ]);
 
   return (
-    <nav className="h-full w-full bg-slate-400 ">
+    <nav className="h-full  bg-slate-400 ">
       <ul className="text-3xl p-4">
         {menuList.map((menu, index) => (
           <li key={index}>
